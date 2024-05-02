@@ -7,7 +7,7 @@ services:
     ports:
       - "9090:9090"
     volumes:
-      - ${PWD}/sharry.conf:/opt/sharry.conf
+      - ./sharry.conf:/opt/sharry.conf
     depends_on:
       - db
   db:
